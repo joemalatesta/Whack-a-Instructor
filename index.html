@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Whack-a-Instructor</title>
+  </head>
+  <body>
+    <div class="titlebox">
+      <h1>Whack-a-Instructor</h1>
+      <h2>
+        You are a GA Student, test your skill. How many Instructors you can
+        Whack in 30 seconds. </br>IA's are worth 1 points, TA's are worth 2 points, and IL's are worth 3 points!
+      </h2>
+    </div>
+    <div class="titlebox">
+      <ul class="details">
+        <li class="centerbtn">
+          <button type="button" class="gameButton btn btn-primary btn-lg">
+            Start Game
+          </button>
+        </li>
+        <li >
+          Score: <span class="score">0</span>
+          <img class="points" src="" alt="" hidden="true" />
+        </li>
+        <li>Time: <span class="time">30</span> s</li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="hole hole0">
+        <img class="character" src="" alt="" hidden="true" draggable="false" />
+      </div>
+      <div class="hole hole1">
+        <img class="character" src="" alt="" hidden="true" draggable="false" />
+      </div>
+      <div class="hole hole2">
+        <img class="character" src="" alt="" hidden="true" draggable="false" />
+      </div>
+      <div class="hole hole3">
+        <img class="character" src="" alt="" hidden="true" draggable="false" />
+      </div>
+      <div class="hole hole4">
+        <img class="character" src="" alt="" hidden="true" draggable="false" />
+      </div>
+      <div class="hole hole5">
+        <img class="character" src="" alt="" hidden="true" draggable="false" />
+      </div>
+      <div class="hole hole6">
+        <img class="character" src="" alt="" hidden="true" draggable="false" />
+      </div>
+      <div class="hole hole7">
+        <img class="character" src="" alt="" hidden="true" draggable="false" />
+      </div>
+      <div class="hole hole8">
+        <img class="character" src="" alt="" hidden="true" draggable="false" />
+      </div>
+      <div class="hole hole9">
+        <img class="character" src="" alt="" hidden="true" draggable="false" />
+      </div>
+      <div class="hole hole10">
+        <img class="character" src="" alt="" hidden="true" draggable="false" />
+      </div>
+      <div class="hole hole11">
+        <img class="character" src="" alt="" hidden="true" draggable="false" />
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Congratulations 🎉
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Your final score is: <span class="finalScore"></span>
+          </div>
+          <div class="modal-body">
+            You have whacked:
+            <br />
+            <span class="scoreDetails"></span>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
